@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: ublue-os/startingpoint
+  - label: bwitherspoon/darkblue
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: startingpoint
+      - label: darkblue
