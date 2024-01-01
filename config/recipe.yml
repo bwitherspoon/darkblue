@@ -24,8 +24,51 @@ modules:
       - dconf-update-service
       - nix-installer
 
-  - type: yafti
-    custom-flatpaks:
+  - type: default-flatpaks
+    notify: true
+    system:
+      install:
+        # Core GNOME
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.Characters
+        - org.gnome.clocks
+        - org.gnome.Connections
+        - org.gnome.Contacts
+        - org.gnome.baobab
+        - org.gnome.SimpleScan
+        - org.gnome.Evince
+        - org.gnome.font-viewer
+        - org.gnome.Loupe
+        - org.gnome.Logs
+        - org.gnome.Maps
+        - org.gnome.Photos
+        - org.gnome.NautilusPreviewer
+        - org.gnome.TextEditor
+        - org.gnome.Totem
+        - org.gnome.Weather
+
+        # System
+        # - com.mattjakeman.ExtensionManager
+        - com.github.tchx84.Flatseal
+        - com.google.Chrome
+        - org.fedoraproject.MediaWriter
+        - org.gnome.DejaDup
+        - org.mozilla.firefox
+        # - org.freedesktop.Platform.ffmpeg-full//22.08
+        # - org.gustavoperedo.FontDownloader
+        - io.missioncenter.MissionCenter
+        # - io.github.celluloid_player.Celluloid
+
+        # Other
+        # - com.discordapp.Discord
+        # - org.onlyoffice.desktopeditors
+        # - md.obsidian.Obsidian
+        # - com.slack.Slack
+        # - com.obsproject.Studio
+        # - com.obsproject.Studio.OBSVkCapture
+        # - com.obsproject.Studio.Plugin.Gstreamer
+        # - com.obsproject.Studio.Plugin.GStreamerVaapi
 
   - type: script
     scripts:
