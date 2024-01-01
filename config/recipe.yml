@@ -15,6 +15,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
+      - gnome-tour
 
   - type: bling
     install:
