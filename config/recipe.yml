@@ -7,11 +7,13 @@ image-version: 39
 modules:
   - type: files
     files:
+      - etc: /etc
       - usr: /usr
 
   - type: rpm-ostree
     repos:
     install:
+      - code
     remove:
       - firefox
       - firefox-langpacks
@@ -27,4 +29,5 @@ modules:
 
   - type: script
     scripts:
+      - cleanup.sh
       - signing.sh
