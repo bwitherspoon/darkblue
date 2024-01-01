@@ -1,0 +1,12 @@
+[gnome/desktop/interface]
+color-scheme='prefer-dark'
+font-antialiasing='rgba'
+gtk-theme='adw-gtk3-dark'
+
+[gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/keys-l.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/keys-d.jpg'
+primary-color='#aaaaaa'
+secondary-color='#000000'

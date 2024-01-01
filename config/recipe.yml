@@ -19,6 +19,7 @@ modules:
 
   - type: bling
     install:
+      - dconf-update-service
       - nix-installer
 
   - type: yafti
