@@ -24,4 +24,6 @@ COPY --from=ghcr.io/ublue-os/bling:latest /modules /tmp/modules/
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
 RUN chmod +x /tmp/build.sh && /tmp/build.sh && \
-    rm -rf /tmp/* /var/* && ostree container commit
+    sed -i '/^PRETTY_NAME/s/Silverblue/Darkblue/' /usr/lib/os-release && \
+    rm -rf /tmp/* /var/* && \
+    ostree container commit
