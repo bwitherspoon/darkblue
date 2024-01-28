@@ -8,10 +8,6 @@ ARG IMAGE_REGISTRY=ghcr.io/ublue-os
 
 COPY cosign.pub /usr/share/ublue-os/cosign.pub
 
-# Copy bling
-COPY --from=ghcr.io/ublue-os/bling:latest /rpms /tmp/bling/rpms
-COPY --from=ghcr.io/ublue-os/bling:latest /files /tmp/bling/files
-
 # Copy build scripts & configuration
 COPY build.sh /tmp/build.sh
 COPY config /tmp/config/
